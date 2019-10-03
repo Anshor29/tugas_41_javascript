@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tugas 41 Javascript</title>
+  </head>
+  <body>
+    <p>Pilih warna background</p>
+    <select id="mySelect" onchange="jalan()" >
+      <option value="red">merah</option>
+      <option value="blue">biru</option>
+      <option value="yellow">kuning</option>
+      <option value="white">putih</option>
+    </select>
+    <p>Saat kamu memilih warna, Background akan berubah</p>
+    <script type="text/javascript">
+      function jalan(){
+        var a = document.getElementById('mySelect').value;
+        document.body.style.backgroundColor = a;
+      }
+
+    </script>
+
+  </body>
+</html>
